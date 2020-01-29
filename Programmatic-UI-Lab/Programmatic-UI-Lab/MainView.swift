@@ -79,6 +79,7 @@ class MainView: UIView {
         setupHighScoreLabel()
         setupHighScore()
         setupScore()
+        setupScoreLabel()
         //setupDisplay()
     }
     
@@ -116,7 +117,7 @@ class MainView: UIView {
         score.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             score.topAnchor.constraint(equalTo: gameTitleLabel.bottomAnchor, constant: 20),
-            score.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -30)
+            score.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -40)
         ])
     }
     
